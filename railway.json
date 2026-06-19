@@ -5,6 +5,6 @@
     "context": "backend"
   },
   "deploy": {
-    "startCommand": "gunicorn -w 1 -b 0.0.0.0:$PORT app:app"
+    "startCommand": "sh -c 'gunicorn -w 1 -b 0.0.0.0:$PORT app:app'"
   }
 }
