@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+faiss_index/
+chunks.db
+venv/
+.idea/
+backend/data/

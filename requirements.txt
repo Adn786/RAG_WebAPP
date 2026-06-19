@@ -1,0 +1,24 @@
+# Backend
+flask>=3.0.3
+gunicorn>=22.0.0
+openai>=1.35.3
+tiktoken>=0.7.0
+# langchain capped below 0.3 on purpose: 0.3+ removes the
+# `langchain.text_splitter` import path used in ingestion.py
+# (it moved fully into the langchain-text-splitters package).
+# Letting this float to 1.x will break the build.
+langchain>=0.2.6,<0.3.0
+langchain-text-splitters>=0.2.1,<0.3.0
+faiss-cpu>=1.8.0
+PyPDF2>=3.0.1
+python-docx>=1.1.2
+python-pptx>=0.6.23
+pandas>=2.2.2
+openpyxl>=3.1.4
+tabulate>=0.9.0
+redis>=5.0.6
+numpy>=1.26.4,<2.0.0
+
+# Frontend
+streamlit>=1.36.0
+requests>=2.32.3
